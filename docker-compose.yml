@@ -15,6 +15,10 @@ services:
       - PORT=3000
       - DATABASE_URL=postgres://user:@postgres-rails:5432
       - GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN=${GITHUB_CODESPACES_PORT_FORWARDING_DOMAIN}
+      - ENGINE_BASE_URL=http://localhost:3003
+      - WILCO_ID=0
+      - HOSTNAME=host.docker.internal
+      - OPENAI_API_KEY=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
     depends_on:
       - "postgres-rails"
 
